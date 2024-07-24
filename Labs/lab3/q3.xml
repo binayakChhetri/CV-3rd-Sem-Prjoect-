@@ -1,0 +1,10 @@
+<Student>
+    <sci:note xmlns:sci="bca2079.com/sci">
+        <sci:chapterone>Living beings</sci:chapterone>
+        <sci:chaptertwo>Cell</sci:chaptertwo>
+    </sci:note>
+    <math:note xmlns:math="bca2079.com/math">
+        <math:chapterone>Living beings</math:chapterone>
+        <math:chaptertwo>Cell</math:chaptertwo>
+    </math:note>
+</Student>

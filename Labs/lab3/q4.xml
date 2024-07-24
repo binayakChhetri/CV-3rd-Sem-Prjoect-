@@ -1,0 +1,16 @@
+<!DOCTYPE Student [
+    <!ELEMENT Student (Name,Address, Email, Contact)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Address (#PCDATA)>
+    <!ELEMENT Email (#PCDATA)>
+    <!ELEMENT Contact (#PCDATA)>
+
+]>
+
+
+<Student>
+    <Name>Binayak</Name>  
+    <Address>Japan</Address>  
+    <Email>sdf@yahoo.com</Email>  
+    <Contact>234</Contact>  
+</Student>

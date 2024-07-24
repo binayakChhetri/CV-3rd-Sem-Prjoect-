@@ -1,0 +1,14 @@
+<root>
+    <book author="Narayan">
+        <title>The Myan</title>
+        <price>Rs. 999</price>
+    </book>
+    <book author="Gopal">
+        <title>The Women</title>
+        <price>Rs. 889</price>
+    </book>
+    <book author="Kisna">
+        <title>The Lion</title>
+        <price>Rs. 189</price>
+    </book>
+</root>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB 1</title>
+
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      body {
+        padding: 100px;
+      }
+
+      #btn {
+        text-align: center;
+        background-color: rgb(255, 0, 140);
+        color: white;
+        text-decoration: none;
+        width: 100px;
+        padding: 10px;
+        z-index: 1;
+        font-weight: 600;
+
+        border: none;
+        border-radius: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Question Number 1
+       -->
+
+    <h2>Question 1</h2>
+    <p><strong>Write and HTML code to display the following:</strong></p>
+
+    <table border="solid 1px black" width="200px">
+      <thead>
+        <th>
+          <b><u>Example</u></b>
+        </th>
+      </thead>
+      <tbody align="center">
+        <tr>
+          <td>(a+b)<sup>2 </sup>= a<sup>2</sup> +2ab+ b<sup>2</sup></td>
+        </tr>
+        <tr>
+          <td>Thank You</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Question Number 2 -->
+    <h2>Question 2</h2>
+    <p>
+      <strong
+        >Write an example to take the following information from user using
+        form:
+        <br />
+        a. Full name <br />
+        b. Gender <br />
+        c. Address <br />
+        d. Contact number <br />
+        e. Hobbies</strong
+      >
+    </p>
+    <br />
+    <hr />
+    <br />
+
+    <form action="" method="get">
+      <div>
+        <label for="fname">Full name</label>
+        <br />
+        <input type="text" name="Full Name" id="fname" />
+      </div>
+      <br />
+
+      <div>
+        <label>Gender</label>
+        <div>
+          <input type="radio" name="Gender" id="male" value="male" />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="Gender" id="female" value="female" />
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="address">Address</label>
+        <br />
+        <input type="text" id="address" name="Address" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="cont-number">Contact number</label>
+        <br />
+        <input type="number" id="cont-number" name="Contact number" />
+      </div>
+
+      <br />
+
+      <div>
+        <label>Hobbies</label>
+        <br />
+        <input type="checkbox" id="football" name="football" value="Football" />
+        <label for="football">Football</label>
+        <br />
+        <input
+          type="checkbox"
+          id="listening-songs"
+          name="listening-songs"
+          value="listening-songs"
+        />
+        <label for="listening-songs">Listening songs</label>
+        <br />
+        <input type="checkbox" id="gaming" name="gaming" value="gaming" />
+        <label for="gaming">Gaming</label>
+        <br />
+        <input type="checkbox" id="others" name="others" value="others" />
+        <label for="others">Others</label>
+      </div>
+    </form>
+
+    <br />
+    <hr />
+    <br />
+    <!-- Question Number 3 -->
+    <h2>Question 3</h2>
+    <p>
+      <strong>
+        Write an HTML document to show information of 5 students using table.
+        Following information should be displayed <br />
+        a. S.N. <br />
+        b. Full Name <br />
+        c. Address <br />
+        d. Contact Number <br />
+        e. Email</strong
+      >
+    </p>
+
+    <table border="solid 1px black">
+      <thead>
+        <th>S.N.</th>
+        <th>Full Name</th>
+        <th>Address</th>
+        <th>Contact Number</th>
+        <th>Email</th>
+      </thead>
+      <tbody align="center">
+        <tr>
+          <td>1</td>
+          <td>John Bhattrai</td>
+          <td>Banke</td>
+          <td>9845124756</td>
+          <td>john4@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>K.P Khanal</td>
+          <td>Humla</td>
+          <td>9758123456</td>
+          <td>khanal6@yahoo.com</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Rahul Tandukar</td>
+          <td>Dolpa</td>
+          <td>9654781423</td>
+          <td>tandukar4@outlook.com</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Aryan Kadel</td>
+          <td>Balgung</td>
+          <td>9845712354</td>
+          <td>aryankdl9@gmail.com</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Aayush Ghalan</td>
+          <td>Kathmandu</td>
+          <td>9847121452</td>
+          <td>ghalan8@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+    <!-- Question Number 4 -->
+    <h2>Question 4</h2>
+    <p>
+      <strong
+        >Write an HTML document to show your +2 result using tables with the
+        concept of rowspan and colspan if needed.
+      </strong>
+    </p>
+
+    <table border="solid 1px black">
+      <thead>
+        <th>S.N</th>
+        <th>Subjects</th>
+        <th>Grade Point</th>
+        <th>Grade</th>
+        <th>Final Grade</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">1</td>
+          <td rowspan="2">Com. Nepali</td>
+          <td>3.6 (TH)</td>
+          <td>A (TH)</td>
+          <td rowspan="2">A+ (TH + IN)</td>
+        </tr>
+        <tr>
+          <td>4.0 (IN)</td>
+          <td>A+ (IN)</td>
+        </tr>
+        <tr>
+          <td rowspan="2">2</td>
+          <td rowspan="2">Com. English</td>
+          <td>3.6 (TH)</td>
+          <td>A (TH)</td>
+          <td rowspan="2">A+ (TH + IN)</td>
+        </tr>
+        <tr>
+          <td>4.0 (IN)</td>
+          <td>A+ (IN)</td>
+        </tr>
+        <tr>
+          <td rowspan="2">3</td>
+          <td rowspan="2">Com. Mathematics</td>
+          <td>2.4 (TH)</td>
+          <td>C+ (TH)</td>
+          <td rowspan="2">B (TH + IN)</td>
+        </tr>
+        <tr>
+          <td>4.0 (IN)</td>
+          <td>A+ (IN)</td>
+        </tr>
+        <tr>
+          <td rowspan="2">4</td>
+          <td rowspan="2">Physics</td>
+          <td>2.4 (TH)</td>
+          <td>C+ (TH)</td>
+          <td rowspan="2">B (TH + PR/IN)</td>
+        </tr>
+        <tr>
+          <td>4.0 (PR/IN)</td>
+          <td>A+ (PR/IN)</td>
+        </tr>
+        <tr>
+          <td rowspan="2">5</td>
+          <td rowspan="2">Biology</td>
+          <td>2.8 (TH)</td>
+          <td>B (TH)</td>
+          <td rowspan="2">B+ (TH + PR/IN)</td>
+        </tr>
+        <tr>
+          <td>4.0 (PR/IN)</td>
+          <td>A+ (PR/IN)</td>
+        </tr>
+        <tr>
+          <td rowspan="2">6</td>
+          <td rowspan="2">Chemistry</td>
+          <td>2.0 (TH)</td>
+          <td>C (TH)</td>
+          <td rowspan="2">B (TH + PR/IN)</td>
+        </tr>
+        <tr>
+          <td>4.0 (PR/IN)</td>
+          <td>A+ (PR/IN)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+    <!-- Question Number 5 -->
+    <h2>Question 5</h2>
+    <p><strong>Write an HTML code to display the following:</strong></p>
+    <form action="" style="width: 400px">
+      <fieldset>
+        <legend><b>User Login</b></legend>
+
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="usernmae"
+          name="Username"
+          placeholder="Enter your username"
+        />
+        <br />
+        <label for="passweord">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="Password"
+          placeholder="Enter your password"
+        />
+        <br />
+        <div style="text-align: center">
+          <input type="submit" value="Login" />
+        </div>
+      </fieldset>
+    </form>
+    <!-- Question Number 6 -->
+    <h2>Question 6</h2>
+    <p><strong>Write an HTML code to display the following</strong></p>
+
+    <br />
+    <hr />
+    <br />
+    <ol>
+      <li style="list-style-type: square">
+        Fruits
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Pineapple</li>
+          <li>Mango</li>
+        </ul>
+      </li>
+      <li style="list-style-type: square">
+        Vegetables
+        <ol type="a" start="4" style="list-style-type: lower-alpha">
+          <li>Cauliflower</li>
+          <li>Brinjal</li>
+          <li>Potato</li>
+          <li>Pumpkin</li>
+        </ol>
+      </li>
+      <li style="list-style-type: square">
+        Meat
+        <ol>
+          <li>Chicken</li>
+          <li>Buffalo</li>
+          <li>Fish</li>
+        </ol>
+      </li>
+    </ol>
+    <!-- Question Number 7 -->
+    <h2>Question 7</h2>
+    <p>
+      <strong
+        >Write a HTML code to implement an image map with at least 4 area
+        defined of different shapes and redirect it to other html pages.</strong
+      >
+    </p>
+
+    <br />
+    <hr />
+    <br />
+    <div>
+      <p>Click on triangle to go to youtube site</p>
+      <p>Click on square to go to facebook site</p>
+      <p>Click on circle to go to twitter site</p>
+      <p>Click on rectangle to go to react docs site</p>
+    </div>
+    <img src="./shape.jpg" alt="Image of shapes" usemap="#shapemap" />
+
+    <map name="shapemap">
+      <area
+        shape="rect"
+        coords="429, 119, 632, 319"
+        alt="square"
+        href="https://www.facebook.com/"
+      />
+      <area
+        shape="circle"
+        coords="189,633,121"
+        alt="circle"
+        href="https://twitter.com/"
+      />
+      <area
+        shape="poly"
+        coords="193,102,72,314,314,314"
+        alt="triangle"
+        href="https://www.youtube.com/"
+      />
+      <area
+        shape="rect"
+        coords="453, 523, 606, 755"
+        alt="rectangle"
+        href="https://react.dev/"
+      />
+    </map>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- Question Number 8 -->
+    <h2>Question 8</h2>
+    <a href="./lab1frameset.html" target="_blank">Frameset</a>
+    <!-- This qsn done on the separate html file -->
+    <!-- Question Number 9-->
+
+    <h2>Question 9</h2>
+    <p>
+      <strong
+        >Write a HTML code to implement vertical frameset, horizontal frameset,
+        and complex frameset. Load different domain in framesets.</strong
+      >
+    </p>
+
+    <label for="fave-game">What's your favourite game?</label>
+    <select name="favourite games" id="fav-game">
+      <option value="football">Football</option>
+      <option value="basketball">Basketball</option>
+      <option value="cricket">Cricket</option>
+    </select>
+    <br />
+    <label for="about-me">Write your info</label>
+    <br />
+    <textarea name="about-me" id="about-me" cols="30" rows="10"></textarea>
+
+    <br />
+    <hr />
+    <br />
+    <!-- Question Number 10-->
+    <h2>Question 10</h2>
+    <p>
+      <strong
+        >Write a HTML code to practice select and textarea element.</strong
+      >
+    </p>
+    <label for="game-choice">Choose your favourite game</label>
+    <br />
+    <input list="game" name="game-choice" id="game-choice" />
+    <datalist id="game">
+      <option value="COD"></option>
+      <option value="PUBG"></option>
+      <option value="Minecraft"></option>
+    </datalist>
+
+    <br />
+    <hr />
+    <br />
+    <!-- Question Number 11-->
+    <h2>Question 11</h2>
+    <p>
+      <strong
+        >Write a HTML code to practice different values of type attribute in
+        input element.
+      </strong>
+    </p>
+
+    <form action="">
+      <label for="">Name</label>
+      <input type="text" />
+      <br />
+      <label for="">Number</label>
+      <input type="number" />
+      <br />
+      <label for="">Password</label>
+      <input type="password" />
+      <br />
+      <label for="">Email</label>
+      <input type="email" />
+      <br />
+      <label for="">Date</label>
+      <input type="date" />
+      <br />
+      <label for="">File</label>
+      <input type="file" />
+      <br />
+      <label for="">Reset</label>
+      <input type="reset" />
+      <br />
+      <label for="">Time</label>
+      <input type="time" />
+      <br />
+      <label for="">URL</label>
+      <input type="URL" />
+
+      <br />
+      <input type="submit" />
+    </form>
+
+    <br />
+    <a href="../../index.html" id="btn">GO BACK</a>
+  </body>
+</html>

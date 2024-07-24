@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "ubuntu", sans-serif;
+  margin: 0em auto;
+}
+
+header {
+  margin: 2em 0em 5em;
+  background-color: white;
+}
+
+/* STYLING THE COMMON STYLES */
+nav,
+.container,
+.foot-container {
+  width: 85%;
+  margin: 0em auto;
+}
+
+.section img,
+.skills-hobbies img {
+  width: 50px;
+  background-color: #0094a8;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title img {
+  margin-right: 1em;
+}
+
+.my-intro h2,
+#position,
+.section h2,
+.skills-hobbies h2 {
+  color: #003041;
+}
+
+.section p {
+  color: #05212b;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* STYLING THE NAV BAR */
+nav {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-lists a {
+  transition: color 300ms linear;
+}
+
+.nav-lists a,
+.nav-lists-mob a {
+  /* Mobile nav bar */
+  color: #0097b2;
+  margin-right: 1em;
+}
+
+/* Mobile nav bar */
+.nav-lists-mob img {
+  width: 20px;
+}
+
+#menu {
+  margin-bottom: 0.5em;
+}
+
+#close {
+  margin-top: 0.5em;
+}
+
+.nav-lists-mob .lists {
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.6;
+  height: 0px;
+  overflow: hidden;
+  transition: height 300ms ease;
+}
+
+.click-menu {
+  text-align: center;
+}
+
+.nav-lists-mob .click-menu {
+  display: none;
+}
+
+/* STYLING THE CONTAINER */
+/*  */
+.my-intro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#main-img {
+  width: 300px;
+  min-width: 60px;
+  border-radius: 50%;
+  background-color: #0097b2;
+}
+
+.my-name-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-intro h2 {
+  font-size: 2.8rem;
+}
+
+#position {
+  text-align: center;
+}
+
+.edu-work .title {
+  margin-bottom: 1em;
+}
+
+/* STYLING ABOUT ME SECTION */
+.about-me {
+  width: 60%;
+  margin: 4em auto 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-me .title {
+  margin-bottom: 1.3em;
+}
+
+.about-me p {
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+/* STYLING THE EDUCATION AND THE WORK EXPERIENCE SECTION */
+.edu-work {
+  margin-top: 4em;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#wrk,
+.education {
+  width: 100%;
+}
+
+.description h3 {
+  margin-bottom: 0.1em;
+}
+
+/* STYLING SKILLS AND HOBBIES */
+.skills-hobbies {
+  margin-top: 4em;
+  line-height: 1.4;
+}
+
+.skills-hobbies .title {
+  margin-bottom: 0.7em;
+}
+
+skills-hobbies li {
+  list-style-type: none;
+}
+
+.skills-hobbies {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* Styling the lab work section */
+.sub-container3 {
+  margin-top: 60px;
+}
+
+.sub-container3 .title {
+  margin-bottom: 40px;
+}
+
+.sub-container3 img {
+  color: #0097b2;
+  width: 50px;
+}
+
+.sub-container3 .lab-item {
+  width: 300px;
+  height: 200px;
+  border: solid black 2px;
+}
+
+.sub-container3 .lab-works {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.lab-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 11px;
+}
+
+.lab-item a {
+  text-align: center;
+  background-color: white;
+  color: black;
+  width: 100px;
+  padding: 10px;
+  z-index: 1;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 10px 20px;
+  cursor: pointer;
+  transition: all 400ms;
+}
+
+#lab1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/html.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(30%);
+}
+#lab2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/css.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(30%);
+}
+#lab3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/xml.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(30%);
+}
+#lab4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/php.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(30%);
+}
+#lab5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/database.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(30%);
+}
+
+/* Styling the footer section */
+footer {
+  padding: 1em 0em 1em;
+  background-color: #0097b2;
+  text-align: center;
+  margin-top: 2em;
+  color: white;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer img {
+  background-color: #0097b2;
+  width: 17px;
+  margin-right: 10px;
+}
+
+footer li {
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer a,
+footer li {
+  font-size: 0.8rem;
+  transition: color 200ms ease-in;
+}
+
+footer span {
+  display: block;
+  margin-top: 1em;
+  font-size: 0.7rem;
+}
+
+/* Adding animations, transitions and other basic effects */
+
+.lab-item a:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+nav a,
+.title {
+  cursor: pointer;
+}
+
+#menu:active,
+#close:active {
+  transform: scale(1.2);
+}
+
+.nav-lists a:hover {
+  color: #003041;
+}
+
+footer a:hover,
+footer li:hover {
+  color: #05212b;
+}
+
+/* MAKING THE SITE RESPONSIVE  */
+@media (max-width: 900px) {
+  .edu-work,
+  .skills-hobbies {
+    flex-direction: column;
+  }
+  .skills-hobbies {
+    margin-top: 0em;
+  }
+  #wrk,
+  .skills-hobbies .title {
+    margin-top: 3em;
+  }
+}
+@media (max-width: 825px) {
+  .my-intro {
+    flex-direction: column;
+  }
+  .my-name-position {
+    margin-top: 1em;
+    text-align: center;
+  }
+  .about-me p {
+    letter-spacing: 1px;
+  }
+  .about-me {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .nav-lists {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-lists-mob .click-menu {
+    display: block;
+  }
+  .nav-lists-mob .lists {
+    display: flex;
+  }
+  .nav-lists-mob a {
+    margin-right: 0;
+  }
+}
+@media (max-width: 610px) {
+  .container h2 {
+    font-size: 1.4rem;
+  }
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer li {
+    margin: 0.4em 0em;
+  }
+  .title h2 {
+    font-size: 1.3rem;
+  }
+}

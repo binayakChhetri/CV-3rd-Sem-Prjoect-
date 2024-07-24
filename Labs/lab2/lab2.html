@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB 2</title>
+    <link rel="stylesheet" href="./lab2.css" />
+    <style>
+      p.para {
+        font-size: 30px;
+      }
+      #btn {
+        text-align: center;
+        background-color: rgb(255, 0, 140);
+        color: white;
+        text-decoration: none;
+        width: 100px;
+        padding: 10px;
+        z-index: 1;
+        font-weight: 600;
+
+        border: none;
+        border-radius: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Question</h2>
+    <p>Write a HTML code to implement the font size of h1 using inline style</p>
+    <h1 style="font-size: 50px">Heading 1</h1>
+
+    <h2>Question</h2>
+    <p>
+      Write a HTML code to implement the font size of paragraph using internal
+      style
+    </p>
+    <p class="para">Paragraph</p>
+
+    <!---  Create an User Registration Form and provide necessary styles using external stylesheet.-->
+    <h2>Question</h2>
+
+    <p>
+      Create an User Registration Form and provide necessary styles using
+      external stylesheet.
+    </p>
+
+    <form action="">
+      <div class="container">
+        <h1>Register an account</h1>
+        <hr />
+
+        <div class="main">
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="psw">Password</label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              id="psw"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="psw-repeat">Repeat Password</label>
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              name="psw-repeat"
+              id="psw-repeat"
+              required
+            />
+          </div>
+        </div>
+
+        <hr />
+
+        <button>Register</button>
+      </div>
+    </form>
+
+    <h2>Question</h2>
+    <p>Create an User Login Form and provide necessary external stylesheet</p>
+
+    <!-- Create an User Login Form and provide necessary external stylesheet -->
+    <form action="" method="post">
+      <div class="container">
+        <div class="item">
+          <label for="username">Username</label>
+          <br />
+          <input type="text" id="username" name="username" />
+        </div>
+        <div class="item">
+          <label for="password">Password</label>
+          <br />
+          <input type="password" id="password" name="password" />
+        </div>
+
+        <input type="submit" />
+      </div>
+    </form>
+
+    <br />
+    <a href="../../index.html" id="btn">GO BACK</a>
+  </body>
+</html>

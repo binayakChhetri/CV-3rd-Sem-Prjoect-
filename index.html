@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="icon" href="./icons/icon.png" type=""/>
+    <link rel="stylesheet" href="./CSS/index.css" />
+  </head>
+  <body>
+   
+    <header>
+      <nav>
+        <div class="nav-lists-mob">
+          <div class="click-menu">
+            <img onclick="showNavLists()" id="menu" src="./icons/menu.svg" alt="">
+          </div>
+          
+          <div class="lists">
+            <a href="index.html">Home</a>
+            <a href="#aboutme">About</a>
+            <a href="#edu">Education</a>
+            <a href="#wrk">Work Experience</a>
+            <a href="#labworks">Lab</a>
+            <img onclick="hideNavLists()" id="close" src="./icons/close.svg" alt="">
+          </div>
+        </div>
+        <div class="nav-lists">
+          <a href="index.html">Home</a>
+          <a href="#aboutme">About</a>
+          <a href="#edu">Education</a>
+          <a href="#wrk">Work Experience</a>
+          <a href="#labworks">Lab works</a>
+        </div>
+
+        
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="sub-container">
+        <div class="my-intro">
+          <img id="main-img" src="./assets/profile.jpg" alt="" />
+          <div class="my-name-position">
+            <h2>Hello👋, I'm Binayak Chhetri</h2>
+            <span id="position">BCA Student</span>
+          </div>
+        </div>
+
+        <div id="aboutme" class="section about-me">
+          <div onclick="showAboutMe()" class="title">
+            <img src="./icons/about-me.svg" alt="" />
+            <h2>ABOUT ME</h2>
+          </div>
+          <p id="abt-me">I'm a BCA student, currently studying at Asian College of Higher Studies with the aim of developing career in the field of software/web development. </p>
+          </p>
+        </div>
+
+        <div id="edu" class="edu-work">
+          <div class="section education">
+            <div onclick="showEduInfo()" class="title">
+              <img  src="./icons/education.svg" alt="" />
+              <h2>EDUCATION</h2>
+              
+            </div>
+            <div class="description">
+              <h3>SEE</h3>
+              <div class="sub-description">
+                <p>I passed SEE from Green Village Education Foundation.</p>
+              </div>
+            </div>
+            <div style="margin-top: 20px;" class="description">
+              <h3>High School</h3>
+              <div class="sub-description">
+                <p>I passed +2 from Kasthamandap</p>
+              </div>
+            </div>
+          </div>
+  
+          <div id="wrk" class="section work-experience">
+            <div onclick="showWorkInfo()" class="title">
+              <img src="./icons/suitcase.svg" alt="" />
+              <h2>WORK EXPERIENCE</h2>
+            </div>
+            <div class="description">
+              <h3>Student</h3>
+              <div class="sub-description">
+                <p>No works till now</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-container2">
+        <div class="skills-hobbies">
+          <div class="skills">
+            <div onclick="showSkillInfo()" class="title">
+              <img src="./icons/skills.svg" alt="">
+              <h2>SKILLS</h2>
+            </div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>Tailwind</li>
+              <li>React</li>
+            </ul>
+          </div>
+  
+          <div class="hobbies">
+            <div  onclick="showHobbiesInfo()" class="title">
+              <img src="./icons/hobbies.svg" alt="">
+              <h2>HOBBIES</h2>
+            </div>
+            
+            <ul>
+              <li>Programming</li>
+              <li>Football/Futsal</li>
+              <li>Exercise</li>
+            </ul>
+          </div>
+        </div>
+
+        
+      </div>
+      <div class="sub-container3">
+        <div onclick="showLabSection()" id="labworks" class="title">
+          <img src="./icons/web-lab.svg" alt="" />
+          <h2>LAB</h2>
+        </div>
+        <div class="lab-works">
+          <div class="lab-item" id="lab1">
+            <a href="./Labs/lab1/lab1.html" target="_blank">LAB 1</a>
+           
+
+          </div>
+          <div class="lab-item" id="lab2">
+            <a href="./Labs/lab2/lab2.html" target="_blank">LAB 2</a>
+
+          </div>
+          <div class="lab-item" id="lab3">
+            <a href="./Labs/lab3/xml.html">LAB 3</a>
+
+          </div>
+          <div class="lab-item" id="lab4">
+            <a href="./Labs/lab4/lab4.php" >LAB 4</a>
+
+          </div>
+          <div class="lab-item" id="lab5">
+            <a  href="./Labs/lab5/database.html">LAB 5</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot-container">
+        <ul>
+          <li>
+            <img src="./icons/call.svg" alt="" />
+          +977 984 990 5858
+          </li>
+         
+          <li>
+            <img src="./icons/location.svg" alt="" />Kirtipur-5, Kathmandu
+          </li>
+        </ul>
+        <span>&copyAll rights reserved</span>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./Js/index.js"></script>
+</html>
